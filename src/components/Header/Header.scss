@@ -1,0 +1,107 @@
+.header {
+  width: 100%;
+  height: 105px;
+  border-bottom: 1px solid #cecece;
+
+  .header__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    nav {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        width: 15%;
+        height: 100%;
+        overflow-y: hidden;
+      }
+      .menu__links {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 50px;
+
+        .menu__item {
+          font-family: "Poppins", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #0d0d0d;
+          text-transform: uppercase;
+
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: #787d62;
+          }
+        }
+        .active {
+          color: #787d62;
+        }
+      }
+      .shop {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .search {
+          cursor: pointer;
+          width: 50px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 400;
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: #787d62;
+          }
+        }
+        .login {
+          cursor: pointer;
+          width: 50px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: #787d62;
+          }
+        }
+        .cart {
+          cursor: pointer;
+          width: 50px;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: #787d62;
+          }
+
+          span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #0d0d0d;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
